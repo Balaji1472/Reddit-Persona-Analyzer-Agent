@@ -124,7 +124,7 @@ class RedditPersonaAnalyzer:
         if not text:
             return ""
         
-        # Handle cases where text might be None or not a string
+        # handle cases where text might be None or not a string
         text = str(text)
         text = re.sub(r'[^\w\s\.\,\!\?\-\:]', ' ', text)
         text = re.sub(r'\s+', ' ', text)
